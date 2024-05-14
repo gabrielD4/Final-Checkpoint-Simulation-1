@@ -23,9 +23,6 @@ public class ExerciseService {
     public void updateMark(int marks, long exerciseID) {
         exerciseRepository.updateMarksInExerciseByExerciseId(marks, exerciseID);
     }
-    public void retrieveExerciseByStudentId(long id) {
-
-    }
 
     public Collection<Exercise> retrieveAllExercise() {
         return exerciseRepository.findAll();

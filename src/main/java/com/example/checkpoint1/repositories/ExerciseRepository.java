@@ -15,9 +15,7 @@ public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
     @Transactional
     @Modifying
-    @Query("update Exercise e " +
-            "set e.marks = :marks " +
-            "where e.exerciseId = :exerciseId")
+    @Query("update Exercise e set e.marks = :marks where e.exerciseId = :exerciseId")
     void updateMarksInExerciseByExerciseId(int marks, long exerciseId);
 
     Collection<Exercise> findExerciseByStudentId(long studentId);

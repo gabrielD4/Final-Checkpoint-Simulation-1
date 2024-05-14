@@ -20,7 +20,8 @@ public class Student {
         this.email = email;
     }
 
-    public Student(){}
+    public Student() {
+    }
 
     public long getId() {
         return id;

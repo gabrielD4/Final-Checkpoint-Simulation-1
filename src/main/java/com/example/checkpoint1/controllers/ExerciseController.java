@@ -27,16 +27,16 @@ public class ExerciseController {
 
     @PutMapping("/{exerciseId}")
     public void updateExercise(@PathVariable long exerciseId, @RequestParam int marks) {
-       exerciseService.updateMark(marks, exerciseId);
+        exerciseService.updateMark(marks, exerciseId);
     }
 
     @GetMapping
-    public Collection<Exercise> retrieveALlExercise(){
+    public Collection<Exercise> retrieveALlExercise() {
         return exerciseService.retrieveAllExercise();
     }
 
     @GetMapping("/{studentId}")
-    public Collection<Exercise> retrieveExercisesByStudentId(@PathVariable long studentId){
+    public Collection<Exercise> retrieveExercisesByStudentId(@PathVariable long studentId) {
         return exerciseService.getExerciseByStudentId(studentId);
     }
 }

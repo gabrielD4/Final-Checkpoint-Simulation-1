@@ -11,13 +11,15 @@ import java.util.Optional;
 
 public interface ExerciseRepository extends JpaRepository<Exercise, Long> {
 
-   Optional<Exercise> findByExerciseIdAndStudentId(long exerciseId, long studentId);
+    Optional<Exercise> findByExerciseIdAndStudentId(long exerciseId, long studentId);
 
-   @Transactional
-   @Modifying
-   @Query("update Exercise e set e.marks = :marks where e.exerciseId = :exerciseId")
-   void updateMarksInExerciseByExerciseId(int marks, long exerciseId);
+    @Transactional
+    @Modifying
+    @Query("update Exercise e " +
+            "set e.marks = :marks " +
+            "where e.exerciseId = :exerciseId")
+    void updateMarksInExerciseByExerciseId(int marks, long exerciseId);
 
-   Collection<Exercise> findExerciseByStudentId(long studentId);
+    Collection<Exercise> findExerciseByStudentId(long studentId);
 }
 

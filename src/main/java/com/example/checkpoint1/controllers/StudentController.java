@@ -20,7 +20,7 @@ public class StudentController {
     }
 
     @GetMapping
-    public Collection<Student> retrieveAllStudents(){
+    public Collection<Student> retrieveAllStudents() {
         return studentService.retrieveStudents();
     }
 }

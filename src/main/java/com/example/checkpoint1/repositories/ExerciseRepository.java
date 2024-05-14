@@ -1,5 +1,6 @@
-package com.example.checkpoint1;
+package com.example.checkpoint1.repositories;
 
+import com.example.checkpoint1.entities.Exercise;
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,4 +1,4 @@
-package com.example.checkpoint1;
+package com.example.checkpoint1.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

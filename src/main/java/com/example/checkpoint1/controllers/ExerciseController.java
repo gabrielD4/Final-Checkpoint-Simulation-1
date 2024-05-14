@@ -1,5 +1,7 @@
-package com.example.checkpoint1;
+package com.example.checkpoint1.controllers;
 
+import com.example.checkpoint1.entities.Exercise;
+import com.example.checkpoint1.services.ExerciseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,7 @@
-package com.example.checkpoint1;
+package com.example.checkpoint1.controllers;
 
+import com.example.checkpoint1.entities.Student;
+import com.example.checkpoint1.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

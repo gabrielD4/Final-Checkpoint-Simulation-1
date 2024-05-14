@@ -1,5 +1,7 @@
-package com.example.checkpoint1;
+package com.example.checkpoint1.services;
 
+import com.example.checkpoint1.repositories.ExerciseRepository;
+import com.example.checkpoint1.entities.Exercise;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
